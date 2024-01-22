@@ -1,0 +1,324 @@
+/* Headings Styles */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    color: #14213d; /* Dark Blue */
+    background-color: #e5e5e5; /* Light Grey */
+}
+h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    color: #fca311; /* Orange */
+    background-color: #ffffff; /* White */
+}
+h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #000000; /* Black */
+    background-color: #f0f0f0; /* Slightly Darker Grey */
+}
+
+/* Paragraphs Styles */
+p {
+    color: #333333; /* Darker Text for Readability */
+    line-height: 1.6;
+}
+
+/* Images Styles */
+img {
+    margin: 10px;
+    border: 2px solid #14213d; /* Dark Blue Border */
+}
+
+/* Ordered and Unordered List Styles */
+ul, ol {
+    padding: 0;
+    margin: 0 0 10px 20px;
+}
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style-type: decimal;
+}
+
+/* Form Elements Styles */
+form {
+    background-color: #ffffff; /* White Background for Form */
+    border: 1px solid #e5e5e5; /* Light Grey Border */
+}
+input, textarea, button {
+    font-size: 14px;
+    color: #14213d; /* Dark Blue Text */
+    margin: 5px 0;
+    padding: 8px;
+}
+
+/* Hyperlinks Styles */
+a {
+    color: #fca311; /* Orange Link Color */
+}
+a:hover {
+    color: #14213d; /* Dark Blue on Hover */
+    text-decoration: underline;
+}
+a:visited {
+    color: #000000; /* Black for Visited Links */
+}
+
+/* Header Styles */
+header {
+    background-color: #14213d; /* Dark Blue Background */
+    color: #ffffff; /* White Text */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some padding */
+    border-bottom: 3px solid #fca311; /* Orange border for a distinct separation */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 40px; /* Larger font size for the main heading */
+    font-family: 'Arial', sans-serif; /* Consistent font family */
+}
+
+/* Body Element Styles */
+body {
+    background-color: #e5e5e5; /* Light Grey Background */
+    color: #333333; /* Dark Grey Text for Readability */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #14213d; /* Dark Blue Background for the Nav Bar */
+    overflow: hidden;
+}
+
+/* Style the unordered list in the navigation bar */
+nav ul {
+    list-style-type: none; /* Remove default list bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the navigation items horizontally */
+}
+
+/* Style each list item in the navigation bar */
+nav ul li {
+    float: left; /* Float list items to the left for a horizontal layout */
+}
+
+/* Style the links within each list item */
+nav ul li a {
+    display: block; /* Display links as block elements */
+    color: #ffffff; /* White Text Color */
+    text-align: center; /* Center the text within the link */
+    padding: 14px 16px; /* Add padding around the text for better spacing */
+    text-decoration: none; /* Remove the default underline from links */
+    font-size: 17px; /* Set the font size for the links */
+}
+
+
+nav ul li a:hover {
+    background-color: #fca311; /* Orange Background on Hover */
+    color: #ffffff; /* White Text on Hover */
+}
+
+nav ul li a.active {
+    background-color: #fca311; /* Orange Background for Active Link */
+    color: #ffffff; /* White Text for Active Link */
+}
+
+/* About Me Section Styles */
+#about {
+    background-color: #ffffff; /* White background for the section */
+    color: #14213d; /* Dark Blue text color */
+    padding: 20px; /* Padding for spacing */
+    border-bottom: 2px solid #fca311; /* Orange border at the bottom */
+}
+
+#about h2 {
+    color: #fca311; /* Orange color for the heading */
+}
+
+#about p {
+    color: #000000; /* Black color for the paragraph text */
+}
+
+/* My Skills Section Styles */
+#skills {
+    background-color: #ffffff; /* White background for the section */
+    color: #14213d; /* Dark Blue text color */
+    padding: 20px; /* Padding for spacing */
+    border-bottom: 2px solid #fca311; /* Orange border at the bottom */
+}
+
+#skills h2, #skills h3 {
+    color: #fca311; /* Orange color for the headings */
+    margin-bottom: 10px; /* Spacing below headings */
+}
+
+#skills ul, #skills ol {
+    padding-left: 0; /* Remove default padding */
+    list-style: none; /* Remove default list styling */
+}
+
+#skills li {
+    margin-bottom: 5px; /* Spacing between list items */
+    line-height: 1.5; /* Line height for readability */
+    position: relative; /* Position relative for custom bullet/number */
+    padding-left: 20px; /* Padding to make room for custom bullet/number */
+}
+
+/* Custom Bullet for Unordered List */
+#skills ul li::before {
+    content: '•'; /* Bullet character */
+    color: #fca311; /* Orange color for bullets */
+    font-size: 20px; /* Size of the bullet */
+    position: absolute; /* Absolute position */
+    left: 0; /* Positioning left of the text */
+}
+
+/* Custom Numbering for Ordered List */
+#skills ol {
+    counter-reset: custom-counter; /* Resetting the counter */
+}
+
+#skills ol li {
+    counter-increment: custom-counter; /* Increment counter */
+}
+
+#skills ol li::before {
+    content: counter(custom-counter) '.'; /* Display counter */
+    color: #14213d; /* Dark Blue color for numbers */
+    font-weight: bold; /* Bold font for numbers */
+    position: absolute; /* Absolute position */
+    left: 0; /* Positioning left of the text */
+}
+
+/* Interests Section Styles */
+#interests {
+    background-color: #ffffff; /* White background for the section */
+    color: #ffffff; /* White text color for better readability */
+    padding: 20px; /* Padding for spacing */
+}
+
+#interests h2 {
+    color: #fca311; /* Orange color for the heading */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+/* Interests Section Styles */
+#interests ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display list items in a row */
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards in the container */
+}
+
+/* Interests Card Styles */
+#interests li {
+    background-color: #fca311; /* Dark Blue background for each card */
+    border-radius: 10px; /* Rounded corners for the card */
+    padding: 15px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Prevents content from spilling out of the card */
+    margin-bottom: 20px; /* Space between cards */
+    width: calc(50% - 20px); /* Adjust width for each card */
+    max-width: 400px; /* Maximum width of the card */
+    min-width: 250px; /* Minimum width of the card */
+}
+
+#interests li:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Styles for Images and Videos inside Interest Cards */
+#interests img, #interests video {
+    max-width: 100%; /* Ensures they don't exceed the card's width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any default inline spacing */
+    margin: 10px auto; /* Centers the media and adds space above and below */
+    border-radius: 5px; /* Rounded corners for media */
+}
+
+/* Additional spacing for text above the media */
+#interests p {
+    margin-bottom: 10px; /* Space between text and media */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #interests ul {
+        flex-direction: column; /* Stack cards vertically on small screens */
+    }
+
+    #interests li {
+        width: 100%; /* Full width cards on small screens */
+    }
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #ffffff; /* White background for the section */
+    color: #14213d; /* Dark Blue text color */
+    padding: 20px; /* Padding for spacing */
+    border-top: 2px solid #fca311; /* Orange border at the top */
+}
+
+#contact h2 {
+    color: #fca311; /* Orange color for the heading */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+#contact form {
+    max-width: 100%; /* Ensures form does not exceed section width */
+    margin: 0 auto; /* Centering the form */
+    padding: 0 15px; /* Padding on sides for small screens */
+    box-sizing: border-box; /* Ensures padding does not add to width */
+}
+
+#contact label {
+    display: block; /* Makes the label take the full width */
+    margin-bottom: 5px; /* Space below each label */
+    color: #14213d; /* Dark Blue text color */
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: calc(100% - 20px); /* Full width accounting for padding */
+    padding: 10px; /* Padding inside the fields */
+    margin-bottom: 20px; /* Space below each field */
+    border: 1px solid #d0d0d0; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Ensures border and padding are included in width */
+}
+
+#contact textarea {
+    height: 150px; /* Fixed height for the textarea */
+    resize: vertical; /* Allows vertical resizing */
+}
+
+#contact button {
+    background-color: #14213d; /* Dark Blue background */
+    color: #ffffff; /* White text */
+    padding: 10px 15px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#contact button:hover {
+    background-color: #fca311; /* Orange background on hover */
+}
+
+
+
+
+
+
