@@ -31,7 +31,7 @@ The Basic Portfolio is a personal website that showcases your skills, projects, 
 
 ## Demo
 
-You can view a live demo of the Basic Portfolio [here](https://yourusername.github.io/basic-portfolio).
+You can view a live demo of the Basic Portfolio [here](https://transcendent-genie-32a93d.netlify.app/).
 
 ## Usage
 
