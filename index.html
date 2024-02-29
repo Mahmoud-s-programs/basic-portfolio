@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -64,12 +64,20 @@
             <li>Regex</li>
             <li>GCP</li>
             <li>Git</li>
-            <li>Transformers</li
+            <li>Transformers</li>
             <li>Jira</li>
             <li>MongoDB</li>
             </ul>
+        <div id="imageSlider" class="slider">
+            <img src="skills/c.png" alt="Caption 1" id="sliderImage">
+            <div id="imageCaption">C Programming</div>
+            <div class="buttonContainer">
+                <button id="prevButton">Previous</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+            
         </section>
-    
         <section id="interests">
             <h2>My Interests</h2>
             <p>When I'm not coding, I enjoy a variety of activities that keep me energized and inspired. My interests include:</p>
@@ -100,31 +108,34 @@
                 </li>
             </ul>
         </section>
-
         <section id="contact">
+            <!-- Buttons can be outside the div you're toggling for visibility -->
+            <button id="changeColorBtn">Change Background Color</button>
+            <button id="toggleVisibilityBtn">Toggle Contact Form Visibility</button>
             <h2>Contact Me</h2>
-            <form>
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <div>
-                    <button type="submit">Send Message</button>
-                </div>
-            </form>
+            <div id="contactFormContainer">
+                <form id="contactForm">
+                    <div>
+                        <label for="name">Name: *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email: *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message: *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>                
+            </div>
         </section>
-        
-    
         <footer>
         </footer>
+        <script src="script.js"></script>
     </body>
     </html>
     

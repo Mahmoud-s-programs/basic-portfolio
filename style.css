@@ -1,4 +1,4 @@
-/* Headings Styles */
+/* Headings Styles */ 
 h1 {
     font-family: Arial, sans-serif;
     font-size: 32px;
@@ -196,6 +196,32 @@ nav ul li a.active {
     position: absolute; /* Absolute position */
     left: 0; /* Positioning left of the text */
 }
+.slider {
+    position: relative;
+    max-width: 600px; /* Adjust based on your preference */
+    margin: auto;
+    text-align: center; /* Center-align the content */
+}
+
+#sliderImage {
+    width: 100%;
+    height: auto;
+}
+
+#imageCaption {
+    margin-top: 10px;
+}
+
+.buttonContainer {
+    margin-top: 10px; /* Add space between the image/caption and the buttons */
+}
+
+button {
+    padding: 10px;
+    margin: 0 5px; /* Add space between buttons */
+    /* Removed the absolute positioning and related styles */
+}
+
 
 /* Interests Section Styles */
 #interests {
@@ -259,6 +285,24 @@ nav ul li a.active {
     #interests li {
         width: 100%; /* Full width cards on small screens */
     }
+}
+button {
+    background-color: #14213d; /* Dark Blue, matching the nav bar */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add some padding */
+    margin: 10px; /* Add some margin around buttons */
+    border-radius: 5px; /* Slightly rounded corners for a modern look */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #fca311; /* Change background color on hover */
+}
+#contactFormContainer {
+    display: block; /* or 'none' if it should be hidden initially */
+    /* Any additional styling for the form container */
 }
 
 /* Contact Section Styles */
